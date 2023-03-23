@@ -11,13 +11,13 @@ google-scholar: true
 format:
   html:
     theme:
-      light: [zephyr, ../assets/light-theme.scss]
-      dark:  [slate , ../assets/dark-theme.scss]
+      light: [assets/light-theme.scss , zephyr]
+      dark:  [assets/dark-theme.scss  , slate ]
     # css: assets/citation.css
     css: assets/font-awesome.css
     link-external-newwindow: true
     template-partials:
-      - title-block.html
+    - title-block.html
     filters:
     - lightbox
     lightbox:
