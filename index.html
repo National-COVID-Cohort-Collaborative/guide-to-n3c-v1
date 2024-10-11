@@ -1,5 +1,32 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting...</title>
+    <script type="text/javascript">
+        // Get the current path and query parameters
+        var currentPath = window.location.pathname + window.location.search + window.location.hash;
+        // Define the new base URL
+        var newBaseURL = 'https://national-clinical-cohort-collaborative.github.io';
+        // Redirect to the new URL with the preserved path and query parameters
+        window.location.replace(newBaseURL + currentPath);
+    </script>
+</head>
+<body>
+    <p>If you are not redirected automatically, follow this <a id="redirectLink" href="#">link</a>.</p>
+    <script type="text/javascript">
+        // Also update the manual redirect link just in case
+        document.getElementById('redirectLink').href = newBaseURL + currentPath;
+    </script>
+</body>
+</html>
+
+<!--
+<!DOCTYPE html>
 <meta charset="utf-8">
 <title>Redirecting to G2N3C/</title>
 <meta http-equiv="refresh" content="0; URL=https://national-clinical-cohort-collaborative.github.io/guide-to-n3c-v1/">
 <link rel="canonical" href="https://national-clinical-cohort-collaborative.github.io/guide-to-n3c-v1/">
+-->
